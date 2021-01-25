@@ -11,6 +11,9 @@ import rewardsCentral.service.RewardsCentralService;
 
 import java.util.UUID;
 
+/**
+ * REWARDS CENTRAL CONTROLLER USED AS A MICROSERVICE FOR THE MAIN APP TOUR-GUIDE
+ */
 @RestController
 public class RewardsCentralController {
 
@@ -19,6 +22,13 @@ public class RewardsCentralController {
     @Autowired
     RewardsCentralService rewardsCentralService;
 
+    /**
+     *
+     * @param attractionId the UUID of attractionId in the form of a string
+     * @param userId the UUID of userId in the form of a string
+     * @return int : a number of reward points
+     * @throws UUIDException
+     */
     @GetMapping("/getRewardPoints")
     public int getRewardPointsServer(@RequestParam String attractionId, String userId) throws UUIDException {
         UUID attractionIdUUID = null;
