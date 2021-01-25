@@ -23,7 +23,7 @@ public class RewardsCentralController {
     RewardsCentralService rewardsCentralService;
 
     /**
-     *
+     * HTML GET request for calculating the reward points
      * @param attractionId the UUID of attractionId in the form of a string
      * @param userId the UUID of userId in the form of a string
      * @return int : a number of reward points
