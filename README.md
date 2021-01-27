@@ -74,6 +74,6 @@ Run docker-compose up and Compose starts and runs your entire app.
 
 ## Endpoint
 
-> **GET** - Get user location
+> **GET** - Get reward points of a user
 http://localhost:8082/getRewardPoints <br>
 **OBLIGATORY parameters**: attractionId, userId
